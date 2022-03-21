@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class UserGreeting extends Component {
+class UserGreeting extends Component {
     constructor(props) {
       super(props)
     
@@ -36,3 +36,5 @@ export class UserGreeting extends Component {
 }
 
 export default UserGreeting
+
+//This demonstrates conditional rendering in react

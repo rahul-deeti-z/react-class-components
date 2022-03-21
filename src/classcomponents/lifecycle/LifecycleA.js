@@ -39,7 +39,7 @@ class LifecycleA extends Component {
       <div>
         <div>LifecycleA {this.state.name}</div>
         <button onClick={this.changeState}>Change state</button>
-        {/* <LifecycleB/> */}
+        <LifecycleB/>
       </div>
     );
   }

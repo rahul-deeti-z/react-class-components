@@ -5,7 +5,7 @@ function ChildComponent(props) {
     <div>
       <button onClick={props.greetHandler}>Greet Parent</button>
       {/* make use of arrow function syntax to pass parameters to function call */}
-      <button onClick={() => props.greetHandler("Child Component")}>Greet Parent</button>
+      <button onClick={() => {props.greetHandler("Child Component")}}>Greet Parent</button>
     </div>
   );
 }

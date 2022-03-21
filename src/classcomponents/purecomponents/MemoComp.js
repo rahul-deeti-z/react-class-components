@@ -8,3 +8,5 @@ function MemoComp({name}) {
 }
 
 export default React.memo(MemoComp)
+
+//Using memo will cause React to skip rendering a component if its props have not changed.

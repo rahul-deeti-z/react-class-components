@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class EventBind extends Component {
+class EventBind extends Component {
   constructor(props) {
     super(props)
   
@@ -8,6 +8,7 @@ export class EventBind extends Component {
         message: 'Hello'
     }
     this.clickHandler = this.clickHandler.bind(this)
+    // console.log(this)
   }
   clickHandler(){
       this.setState({

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class RefsDemo extends Component {
     constructor(props) {
       super(props)
-    
+      //step 1) create ref
       this.inputRef = React.createRef()
     }
     componentDidMount(){
@@ -11,11 +11,13 @@ class RefsDemo extends Component {
         this.inputRef.current.focus()
     }
     clickHandler = () => {
+        //step 3) using ref
         alert(this.inputRef.current.value)
     }
   render() {
     return (
       <div>
+          {/* step 2) */}
           <input type="text" ref={this.inputRef}/>
           <button onClick={this.clickHandler}>Click</button>
      </div>

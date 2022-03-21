@@ -27,10 +27,10 @@ export class Form extends Component {
     }
     handleSubmit =  (event) => {
         alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+        //this will disable the default form behavior
         event.preventDefault()
     }
   render() {
-    //   I could not destructure state outside of render method
       const { username, comments, topic } = this.state;
     return (
       <div>

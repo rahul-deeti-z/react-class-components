@@ -1,8 +1,7 @@
-import { getValue } from '@testing-library/user-event/dist/utils';
 import React, { Component } from 'react'
-//rce short cut for class component
+//rce shortcut for class component
 export class Counter extends Component {
-    //rconst is short cut for constructor
+    //rconst is shortcut for constructor
     constructor(props) {
       super(props)
     
@@ -21,6 +20,8 @@ export class Counter extends Component {
         //     );
         //   }
         // );
+        
+        //observe setState carefully, it's arguments, etc
         this.setState( (prevState, props) => ({
             count: prevState.count + 1
         }),
@@ -59,3 +60,11 @@ export default Counter
 
 // When you have to update state based on previous state getValue, pass in function 
 // as an argument instead of regular object
+
+
+// () => ({ name: 'Amanda' })   Shorthand to return an object
+
+/*That is equivalent to:
+() => {
+   return { name : 'Amanda' }
+ } */

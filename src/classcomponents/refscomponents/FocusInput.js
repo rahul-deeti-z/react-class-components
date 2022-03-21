@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Input from './Input'
-
-export class FocusInput extends Component {
+class FocusInput extends Component {
     constructor(props) {
       super(props)
       this.componentRef = React.createRef()
     }
     clickHandler = () => {
+        // console.log(this.componentRef)
+        // console.log(this.componentRef.current)
         this.componentRef.current.focusInput()
     }
   render() {
